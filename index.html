@@ -187,7 +187,32 @@ document.getElementById('quote').addEventListener('submit',e=>{e.preventDefault(
   const list=document.getElementById('v395LovedList');if(!list)return;list.replaceChildren();
   const popular=[...targets.keys()].filter(id=>countFor(id)>0).sort((a,b)=>countFor(b)-countFor(a)).slice(0,5);
   if(!popular.length){list.textContent='Be the first to heart a mirror!';return;}
-  popular.forEach((id,i)=>{const a=document.createElement('a');a.className='v395-loved-item';const matches=targets.get(id)||[];const card=matches.map(x=>x.button.closest('.tile')).find(Boolean);if(card&&!card.id)card.id='v395-design-'+[...targets.keys()].indexOf(id);a.href=card?'#'+card.id:'#mirrorGallery';a.addEventListener('click',event=>{const gallery=document.getElementById('mirrorGallery');if(gallery)gallery.open=true;if(card){event.preventDefault();requestAnimationFrame(()=>{card.scrollIntoView({behavior:'smooth',block:'center'});history.replaceState(null,'','#'+card.id);card.classList.add('v395-target-highlight');setTimeout(()=>card.classList.remove('v395-target-highlight'),2200);});}});const name=document.createElement('span');name.textContent=(i+1)+'. '+id;const num=document.createElement('strong');num.textContent='♥ '+countFor(id);a.append(name,num);list.appendChild(a);});
+  popular.forEach((id,i)=>{
+   const a=document.createElement('a');a.className='v395-loved-item';
+   const matches=targets.get(id)||[];
+   const card=matches.map(x=>x.button.closest('.gallery-products .tile')).find(Boolean);
+   if(card&&!card.id)card.id='v395-design-'+[...targets.keys()].indexOf(id);
+   a.href=card?'#'+card.id:'#mirrorGallery';
+   a.addEventListener('click',event=>{
+    if(!card)return;
+    event.preventDefault();
+    const gallery=document.getElementById('mirrorGallery');
+    if(gallery)gallery.open=true;
+    document.querySelectorAll('.v395-target-highlight').forEach(el=>el.classList.remove('v395-target-highlight'));
+    card.classList.add('v395-target-highlight');
+    const jump=()=>{
+     const top=window.scrollY+card.getBoundingClientRect().top-105;
+     window.scrollTo({top:Math.max(0,top),behavior:'instant'});
+    };
+    // Allow the collapsed gallery to finish laying out before scrolling.
+    setTimeout(jump,100);
+    setTimeout(jump,500);
+    setTimeout(()=>card.classList.remove('v395-target-highlight'),4000);
+   });
+   const name=document.createElement('span');name.textContent=(i+1)+'. '+id;
+   const num=document.createElement('strong');num.textContent='♥ '+countFor(id);
+   a.append(name,num);list.appendChild(a);
+  });
  }
  cards.forEach(card=>{
   const id=safeId(card);if(!id)return;
