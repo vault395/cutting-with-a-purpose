@@ -348,7 +348,29 @@ observer.observe(document.body,{childList:true,subtree:true,characterData:true})
   if(finished)return;finished=true;clearTimeout(timer);
   script.remove();
   try{delete window[callback]}catch(e){window[callback]=undefined}
-  if(!Number.isFinite(value)||value<0){count.textContent='—';message.textContent=spanish()?'Contador temporalmente no disponible.':'Visitor count temporarily unavailable.';return}
+  if(!Number.isFinite(value)||value<0){
+   // Fall back to CounterAPI's supported browser embed if JSONP fails.
+   count.textContent='';
+   const embed=document.createElement('div');
+   embed.className='counterapi';
+   embed.setAttribute('ns','vault395.github.io');
+   embed.setAttribute('action','view');
+   embed.setAttribute('key','vault395-unique-visitors');
+   embed.setAttribute('noIcon','true');
+   embed.setAttribute('noCss','true');
+   embed.setAttribute('noLink','true');
+   embed.setAttribute('noAnim','true');
+   if(counted)embed.setAttribute('readOnly','true');
+   count.appendChild(embed);
+   message.textContent=spanish()?'Gracias por visitar Vault 395.':'Thanks for visiting Vault 395.';
+   if(!counted){try{localStorage.setItem(storageKey,'yes')}catch(e){}}
+   const loader=document.createElement('script');
+   loader.src='https://counterapi.com/c.js?ns=vault395.github.io';
+   loader.async=true;
+   loader.onerror=()=>{count.textContent='—';message.textContent=spanish()?'Contador temporalmente no disponible.':'Visitor count temporarily unavailable.'};
+   document.head.appendChild(loader);
+   return;
+  }
   if(!counted){try{localStorage.setItem(storageKey,'yes')}catch(e){}}
   count.textContent=Math.round(value).toLocaleString(spanish()?'es-US':'en-US');
   const achieved=milestones.filter(n=>value>=n).pop(),next=milestones.find(n=>value<n);
