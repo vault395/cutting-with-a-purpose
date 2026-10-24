@@ -337,20 +337,27 @@ observer.observe(document.body,{childList:true,subtree:true,characterData:true})
  if(!count||!message)return;
  const spanish=()=>document.documentElement.lang==='es'||document.documentElement.classList.contains('v395-es');
  const milestones=[100,250,500,1000,2500,5000,10000,25000,50000,100000];
- const storageKey='v395_unique_visit_counted_v1';
- let previouslyCounted=false;
- try{previouslyCounted=localStorage.getItem(storageKey)==='yes'}catch(e){}
- // Count one visit per browser rather than each page reload. All language versions share one counter.
- const url='https://counterapi.com/api/vault395.github.io/view/vault395-unique-visitors'+(previouslyCounted?'?readOnly=true':'');
- fetch(url,{cache:'no-store'}).then(response=>{if(!response.ok)throw new Error('Counter unavailable');return response.json()}).then(data=>{
-   const value=Number(data.value);
-   if(!Number.isFinite(value)||value<0)throw new Error('Invalid counter');
-   if(!previouslyCounted){try{localStorage.setItem(storageKey,'yes')}catch(e){}}
-   count.textContent=Math.round(value).toLocaleString(spanish()?'es-US':'en-US');
-   const achieved=milestones.filter(n=>value>=n).pop();
-   const next=milestones.find(n=>value<n);
-   const text=achieved&&value===achieved?(spanish()?'🎉 ¡Llegamos a '+achieved.toLocaleString('es-US')+' visitantes!':'🎉 We reached '+achieved.toLocaleString('en-US')+' visitors!'):(next?(spanish()?'Próxima meta: '+next.toLocaleString('es-US')+' visitantes':'Next milestone: '+next.toLocaleString('en-US')+' visitors'):(spanish()?'¡Gracias por crecer con nosotros!':'Thanks for growing with us!'));
-   message.textContent=text;
- }).catch(()=>{count.textContent='—';message.textContent=spanish()?'El contador no está disponible por ahora.':'Visitor count temporarily unavailable.'});
+ const storageKey='v395_unique_visit_counted_v2';
+ let counted=false;
+ try{counted=localStorage.getItem(storageKey)==='yes'}catch(e){}
+ const callback='v395VisitorCallback';
+ let finished=false;
+ const script=document.createElement('script');
+ const timer=setTimeout(()=>finish(null),12000);
+ function finish(value){
+  if(finished)return;finished=true;clearTimeout(timer);
+  script.remove();
+  try{delete window[callback]}catch(e){window[callback]=undefined}
+  if(!Number.isFinite(value)||value<0){count.textContent='—';message.textContent=spanish()?'Contador temporalmente no disponible.':'Visitor count temporarily unavailable.';return}
+  if(!counted){try{localStorage.setItem(storageKey,'yes')}catch(e){}}
+  count.textContent=Math.round(value).toLocaleString(spanish()?'es-US':'en-US');
+  const achieved=milestones.filter(n=>value>=n).pop(),next=milestones.find(n=>value<n);
+  message.textContent=achieved&&value===achieved?(spanish()?'🎉 ¡Llegamos a '+achieved.toLocaleString('es-US')+' visitantes!':'🎉 We reached '+achieved.toLocaleString('en-US')+' visitors!'):(next?(spanish()?'Próxima meta: '+next.toLocaleString('es-US')+' visitantes':'Next milestone: '+next.toLocaleString('en-US')+' visitors'):(spanish()?'¡Gracias por crecer con nosotros!':'Thanks for growing with us!'));
+ }
+ // CounterAPI documents JSONP for browser use; unlike fetch, this does not require CORS.
+ window[callback]=function(data){finish(Number(data&&data.value))};
+ script.onerror=()=>finish(null);
+ script.src='https://counterapi.com/api/vault395.github.io/view/vault395-unique-visitors?callback='+callback+(counted?'&readOnly=true':'');
+ document.head.appendChild(script);
 })();
 </script></body></html>
