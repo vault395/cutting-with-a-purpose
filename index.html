@@ -333,53 +333,27 @@ observer.observe(document.body,{childList:true,subtree:true,characterData:true})
 })();
 </script><script id="v395-visitor-counter-script">
 (function(){
- const count=document.getElementById('v395VisitorCount'),message=document.getElementById('v395VisitorMilestone');
+ const count=document.getElementById('v395VisitorCount');
+ const message=document.getElementById('v395VisitorMilestone');
  if(!count||!message)return;
- const spanish=()=>document.documentElement.lang==='es'||document.documentElement.classList.contains('v395-es');
- const milestones=[100,250,500,1000,2500,5000,10000,25000,50000,100000];
- const storageKey='v395_unique_visit_counted_v2';
- let counted=false;
- try{counted=localStorage.getItem(storageKey)==='yes'}catch(e){}
- const callback='v395VisitorCallback';
- let finished=false;
- const script=document.createElement('script');
- const timer=setTimeout(()=>finish(null),12000);
- function finish(value){
-  if(finished)return;finished=true;clearTimeout(timer);
-  script.remove();
-  try{delete window[callback]}catch(e){window[callback]=undefined}
-  if(!Number.isFinite(value)||value<0){
-   // Fall back to CounterAPI's supported browser embed if JSONP fails.
-   count.textContent='';
-   const embed=document.createElement('div');
-   embed.className='counterapi';
-   embed.setAttribute('ns','vault395.github.io');
-   embed.setAttribute('action','view');
-   embed.setAttribute('key','vault395-unique-visitors');
-   embed.setAttribute('noIcon','true');
-   embed.setAttribute('noCss','true');
-   embed.setAttribute('noLink','true');
-   embed.setAttribute('noAnim','true');
-   if(counted)embed.setAttribute('readOnly','true');
-   count.appendChild(embed);
-   message.textContent=spanish()?'Gracias por visitar Vault 395.':'Thanks for visiting Vault 395.';
-   if(!counted){try{localStorage.setItem(storageKey,'yes')}catch(e){}}
-   const loader=document.createElement('script');
-   loader.src='https://counterapi.com/c.js?ns=vault395.github.io';
-   loader.async=true;
-   loader.onerror=()=>{count.textContent='—';message.textContent=spanish()?'Contador temporalmente no disponible.':'Visitor count temporarily unavailable.'};
-   document.head.appendChild(loader);
-   return;
-  }
-  if(!counted){try{localStorage.setItem(storageKey,'yes')}catch(e){}}
-  count.textContent=Math.round(value).toLocaleString(spanish()?'es-US':'en-US');
-  const achieved=milestones.filter(n=>value>=n).pop(),next=milestones.find(n=>value<n);
-  message.textContent=achieved&&value===achieved?(spanish()?'🎉 ¡Llegamos a '+achieved.toLocaleString('es-US')+' visitantes!':'🎉 We reached '+achieved.toLocaleString('en-US')+' visitors!'):(next?(spanish()?'Próxima meta: '+next.toLocaleString('es-US')+' visitantes':'Next milestone: '+next.toLocaleString('en-US')+' visitors'):(spanish()?'¡Gracias por crecer con nosotros!':'Thanks for growing with us!'));
- }
- // CounterAPI documents JSONP for browser use; unlike fetch, this does not require CORS.
- window[callback]=function(data){finish(Number(data&&data.value))};
- script.onerror=()=>finish(null);
- script.src='https://counterapi.com/api/vault395.github.io/view/vault395-unique-visitors?callback='+callback+(counted?'&readOnly=true':'');
- document.head.appendChild(script);
+ // Use CounterAPI's documented browser embed directly rather than an
+ // unreliable JSONP request followed by a delayed fallback.
+ const embed=document.createElement('div');
+ embed.className='counterapi';
+ embed.setAttribute('ns','vault395.github.io');
+ embed.setAttribute('action','view');
+ embed.setAttribute('key','vault395-unique-visitors');
+ embed.setAttribute('noIcon','true');
+ embed.setAttribute('noLink','true');
+ embed.setAttribute('noAnim','true');
+ count.replaceChildren(embed);
+ const loader=document.createElement('script');
+ loader.src='https://counterapi.com/c.js?ns=vault395.github.io';
+ loader.async=true;
+ loader.onerror=function(){
+   count.textContent='—';
+   message.textContent=document.documentElement.lang==='es'?'Contador temporalmente no disponible.':'Visitor count temporarily unavailable.';
+ };
+ document.head.appendChild(loader);
 })();
 </script></body></html>
