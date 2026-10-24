@@ -305,7 +305,18 @@ function translateAll(lang){
  try{localStorage.setItem('v395_language',lang)}catch(e){}
 }
 const observer=new MutationObserver(()=>{if(current==='es'){observer.disconnect();translateAll('es');observer.observe(document.body,{childList:true,subtree:true,characterData:true});}});
-document.querySelectorAll('[data-v395-lang]').forEach(btn=>btn.addEventListener('click',()=>translateAll(btn.dataset.v395Lang)));
+document.querySelectorAll('[data-v395-lang]').forEach(btn=>btn.addEventListener('click',()=>{
+ const lang=btn.dataset.v395Lang;
+ translateAll(lang);
+ try{const url=new URL(location.href);url.searchParams.set('lang',lang);history.replaceState(null,'',url)}catch(e){}
+}));
+document.addEventListener('click',event=>{
+ const link=event.target.closest('a[href]');
+ if(!link||current!=='es')return;
+ const href=link.getAttribute('href');
+ if(!href||href.startsWith('mailto:')||href.startsWith('tel:')||href.startsWith('javascript:'))return;
+ try{const u=new URL(href,location.href);if(u.origin===location.origin&&u.pathname===location.pathname&&!u.searchParams.has('lang')&&!href.startsWith('#')){u.searchParams.set('lang','es');link.href=u.href}}catch(e){}
+});
 try{current=localStorage.getItem('v395_language')==='es'?'es':'en'}catch(e){}
 // Explicit ?lang=es links open directly in Spanish, even in a new browser or in-app viewer.
 const requestedLanguage=new URLSearchParams(window.location.search).get('lang');
