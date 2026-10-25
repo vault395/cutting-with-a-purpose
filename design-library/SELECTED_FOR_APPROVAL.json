@@ -1,0 +1,472 @@
+{
+  "title": "Vault 395 Design Library — selected designs for approval",
+  "created": "2026-10-25",
+  "publication_preference": "prepare-for-approval-only",
+  "total": 57,
+  "existing_catalog_count": 6,
+  "notes": [
+    "No new designs approved or published by this manifest.",
+    "Original artwork must be located and verified before any preview is published.",
+    "Never place private laser-ready masters in this public repository.",
+    "Exclude Disney-related artwork from public catalog, regardless of selection.",
+    "Existing design-library.html and order pages remain unchanged."
+  ],
+  "designs": [
+    {
+      "id": "V395-R001",
+      "name": "Live Laugh Love — Dark Twist",
+      "category": "Existing catalog",
+      "status": "existing-catalog-review",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R002",
+      "name": "Pumpkin Scarecrow",
+      "category": "Existing catalog",
+      "status": "existing-catalog-review",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R003",
+      "name": "Animatronic Horror",
+      "category": "Existing catalog",
+      "status": "existing-catalog-review",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R004",
+      "name": "Chupacabra Humor",
+      "category": "Existing catalog",
+      "status": "existing-catalog-review",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R005",
+      "name": "Creepy Clown",
+      "category": "Existing catalog",
+      "status": "existing-catalog-review",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R006",
+      "name": "Halloween Witches",
+      "category": "Existing catalog",
+      "status": "existing-catalog-review",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R007",
+      "name": "Raccoon",
+      "category": "Bathroom Humor",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R008",
+      "name": "Donkey",
+      "category": "Bathroom Humor",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R009",
+      "name": "Ducks in the Sink",
+      "category": "Bathroom Humor",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R010",
+      "name": "Cat in the Sink",
+      "category": "Bathroom Humor",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R011",
+      "name": "Skeleton in the Bathroom — needs anatomy correction",
+      "category": "Bathroom Humor",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Correct anatomy before approval"
+    },
+    {
+      "id": "V395-R012",
+      "name": "Hourglass with Spilled Pills",
+      "category": "Love, Loss & Remembrance",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R013",
+      "name": "Love Lost Too Soon",
+      "category": "Love, Loss & Remembrance",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R014",
+      "name": "Recovery & Hope",
+      "category": "Love, Loss & Remembrance",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R015",
+      "name": "Memorial Messages",
+      "category": "Love, Loss & Remembrance",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R016",
+      "name": "Remembrance Artwork",
+      "category": "Love, Loss & Remembrance",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R017",
+      "name": "Midnight Carnival",
+      "category": "Original Horror",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R018",
+      "name": "Puppet Retirement Home",
+      "category": "Original Horror",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R019",
+      "name": "Last Toy Store",
+      "category": "Original Horror",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R020",
+      "name": "Midnight Diner",
+      "category": "Original Horror",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R021",
+      "name": "Tooth Collector",
+      "category": "Original Horror",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R022",
+      "name": "Midnight Playground",
+      "category": "Original Horror",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R023",
+      "name": "Sam, Dean & Castiel Collage",
+      "category": "Supernatural",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R024",
+      "name": "Dumbledore's Ring of Fire",
+      "category": "Wizarding Fantasy",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R025",
+      "name": "Dobby at Malfoy Manor",
+      "category": "Wizarding Fantasy",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R026",
+      "name": "Four House Archways",
+      "category": "Wizarding Fantasy",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R027",
+      "name": "Wholesome Christmas Company Emblems",
+      "category": "Seasonal & Custom",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R028",
+      "name": "Halloween Mirrors",
+      "category": "Seasonal & Custom",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R029",
+      "name": "Original Holiday Artwork",
+      "category": "Seasonal & Custom",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R030",
+      "name": "Custom Business Logos",
+      "category": "Seasonal & Custom",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R031",
+      "name": "Vault 395 Branding",
+      "category": "Seasonal & Custom",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R032",
+      "name": "Accio Beer",
+      "category": "Bottle Openers",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R033",
+      "name": "Mischief Managed",
+      "category": "Bottle Openers",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R034",
+      "name": "Dark Mark",
+      "category": "Bottle Openers",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R035",
+      "name": "Four Houses",
+      "category": "Bottle Openers",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R036",
+      "name": "Hogwarts General",
+      "category": "Bottle Openers",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R037",
+      "name": "Custom Truck Design",
+      "category": "Bottle Openers",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R038",
+      "name": "Funny Slogans",
+      "category": "Bottle Openers",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": ""
+    },
+    {
+      "id": "V395-R039",
+      "name": "Michael Myers",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R040",
+      "name": "Friday the 13th",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R041",
+      "name": "Nightmare on Elm Street",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R042",
+      "name": "Ghostbusters",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R043",
+      "name": "Beetlejuice Waiting Room",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R044",
+      "name": "Silent Hill",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R045",
+      "name": "Stranger Things",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R046",
+      "name": "Jaws",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R047",
+      "name": "Gremlins",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R048",
+      "name": "Little Shop of Horrors",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R049",
+      "name": "Tombstone",
+      "category": "Horror & Pop Culture",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R050",
+      "name": "Dexter's Laboratory",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R051",
+      "name": "Care Bears",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R052",
+      "name": "Magic School Bus",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R053",
+      "name": "Land Before Time",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R054",
+      "name": "All Dogs Go to Heaven",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R055",
+      "name": "Rugrats",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R056",
+      "name": "Reptar vs Godzilla",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    },
+    {
+      "id": "V395-R057",
+      "name": "Sesame Street",
+      "category": "Nostalgic Cartoons",
+      "status": "pending-original-artwork",
+      "approved_for_new_publication": false,
+      "notes": "Review rights and branding before approval"
+    }
+  ]
+}
