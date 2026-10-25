@@ -1,0 +1,46 @@
+{
+  "category": "Motivational",
+  "status": "awaiting-image-upload",
+  "publication": "Do not list designs until their image files exist in repository",
+  "primary": [
+    {
+      "id": "V395-M001",
+      "name": "Built, Not Given — Boulder",
+      "es": "Construido, no regalado",
+      "file": "built-not-given-rock.webp"
+    },
+    {
+      "id": "V395-M002",
+      "name": "Still Showing Up",
+      "es": "Aquí seguimos",
+      "file": "still-showing-up.webp"
+    },
+    {
+      "id": "V395-M003",
+      "name": "Professional Chaos Coordinator",
+      "es": "Coordinador del caos profesional",
+      "file": "professional-chaos-coordinator.webp"
+    },
+    {
+      "id": "V395-M004",
+      "name": "One More Step",
+      "es": "Un paso más",
+      "file": "one-more-step.webp"
+    }
+  ],
+  "alternates": [
+    {
+      "name": "Built, Not Given — Gears",
+      "file": "built-not-given-gears-alternate.webp"
+    },
+    {
+      "name": "Professional Chaos Coordinator — Alternate",
+      "file": "professional-chaos-alternate.webp"
+    }
+  ],
+  "notes": [
+    "Generated artwork previews, not verified production-ready laser masters",
+    "User requested Motivational section in design library",
+    "Keep all private engraving masters outside public repository"
+  ]
+}
