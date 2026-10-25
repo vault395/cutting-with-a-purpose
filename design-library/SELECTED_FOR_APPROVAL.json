@@ -5,7 +5,7 @@
   "total": 57,
   "existing_catalog_count": 6,
   "notes": [
-    "No new designs approved or published by this manifest.",
+    "Batch 1 user decisions recorded; approval does not authorize automatic publication.",
     "Original artwork must be located and verified before any preview is published.",
     "Never place private laser-ready masters in this public repository.",
     "Exclude Disney-related artwork from public catalog, regardless of selection.",
@@ -16,57 +16,57 @@
       "id": "V395-R001",
       "name": "Live Laugh Love — Dark Twist",
       "category": "Existing catalog",
-      "status": "existing-catalog-review",
+      "status": "approved-for-catalog-review",
       "approved_for_new_publication": false,
-      "notes": ""
+      "notes": "User approved design on 2026-10-25. Publication remains gated; no new publication authorized."
     },
     {
       "id": "V395-R002",
       "name": "Pumpkin Scarecrow",
       "category": "Existing catalog",
-      "status": "existing-catalog-review",
+      "status": "approved-for-catalog-review",
       "approved_for_new_publication": false,
-      "notes": ""
+      "notes": "User approved design on 2026-10-25. Publication remains gated; no new publication authorized."
     },
     {
       "id": "V395-R003",
       "name": "Animatronic Horror",
       "category": "Existing catalog",
-      "status": "existing-catalog-review",
+      "status": "approved-for-catalog-review",
       "approved_for_new_publication": false,
-      "notes": ""
+      "notes": "User approved design on 2026-10-25. Publication remains gated; no new publication authorized."
     },
     {
       "id": "V395-R004",
       "name": "Chupacabra Humor",
       "category": "Existing catalog",
-      "status": "existing-catalog-review",
+      "status": "approved-for-catalog-review",
       "approved_for_new_publication": false,
-      "notes": ""
+      "notes": "User approved design on 2026-10-25. Publication remains gated; no new publication authorized."
     },
     {
       "id": "V395-R005",
       "name": "Creepy Clown",
       "category": "Existing catalog",
-      "status": "existing-catalog-review",
+      "status": "approved-for-catalog-review",
       "approved_for_new_publication": false,
-      "notes": ""
+      "notes": "User approved design on 2026-10-25. Publication remains gated; no new publication authorized."
     },
     {
       "id": "V395-R006",
       "name": "Halloween Witches",
       "category": "Existing catalog",
-      "status": "existing-catalog-review",
+      "status": "not-approved",
       "approved_for_new_publication": false,
-      "notes": ""
+      "notes": "User excluded #6 from Batch 1 approvals on 2026-10-25; await changes or hold instruction."
     },
     {
       "id": "V395-R007",
       "name": "Raccoon",
       "category": "Bathroom Humor",
-      "status": "pending-original-artwork",
+      "status": "approved-pending-original-artwork",
       "approved_for_new_publication": false,
-      "notes": ""
+      "notes": "User approved design concept on 2026-10-25; original asset still missing. Do not publish until verified."
     },
     {
       "id": "V395-R008",
