@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-25",
+  "purpose": "Vault 395 review queue. This file is not a public catalog and does not contain private laser masters.",
+  "items": [
+    {
+      "id": "IMPORT-001",
+      "source": "ChatGPT Image Oct 20, 2026, 06_18_28 PM.jpg",
+      "title": "ChatGPT Image Oct 20, 2026, 06 18 28 PM",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Unidentified artwork; inspect before publishing"
+    },
+    {
+      "id": "IMPORT-002",
+      "source": "ChatGPT Image Oct 20, 2026, 06_18_34 PM.jpg",
+      "title": "ChatGPT Image Oct 20, 2026, 06 18 34 PM",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Unidentified artwork; inspect before publishing"
+    },
+    {
+      "id": "IMPORT-003",
+      "source": "ChatGPT Image Oct 20, 2026, 06_18_39 PM.jpg",
+      "title": "ChatGPT Image Oct 20, 2026, 06 18 39 PM",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Unidentified artwork; inspect before publishing"
+    },
+    {
+      "id": "IMPORT-004",
+      "source": "ChatGPT Image Oct 20, 2026, 06_18_43 PM.jpg",
+      "title": "ChatGPT Image Oct 20, 2026, 06 18 43 PM",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Unidentified artwork; inspect before publishing"
+    },
+    {
+      "id": "IMPORT-005",
+      "source": "ChatGPT Image Oct 20, 2026, 06_18_48 PM.jpg",
+      "title": "ChatGPT Image Oct 20, 2026, 06 18 48 PM",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Unidentified artwork; inspect before publishing"
+    },
+    {
+      "id": "IMPORT-006",
+      "source": "ChatGPT Image Oct 20, 2026, 06_18_52 PM.jpg",
+      "title": "ChatGPT Image Oct 20, 2026, 06 18 52 PM",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Unidentified artwork; inspect before publishing"
+    },
+    {
+      "id": "IMPORT-007",
+      "source": "animatronic-horror.webp",
+      "title": "animatronic horror",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-008",
+      "source": "chupacabra-humor.webp",
+      "title": "chupacabra humor",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-009",
+      "source": "cookie-monster.webp",
+      "title": "cookie monster",
+      "status": "invalid-empty-file",
+      "public_catalog": false,
+      "notes": "Exclude from public catalog under current Disney/content restrictions pending review"
+    },
+    {
+      "id": "IMPORT-010",
+      "source": "deathly-hallows-uv.webp",
+      "title": "deathly hallows uv",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-011",
+      "source": "detroit-lions.webp",
+      "title": "detroit lions",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-012",
+      "source": "halloween-witches.webp",
+      "title": "halloween witches",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-013",
+      "source": "horror-clown.webp",
+      "title": "horror clown",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-014",
+      "source": "live-laugh-love.webp",
+      "title": "live laugh love",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-015",
+      "source": "oogie-boogie.webp",
+      "title": "oogie boogie",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Exclude from public catalog under current Disney/content restrictions pending review"
+    },
+    {
+      "id": "IMPORT-016",
+      "source": "pittsburgh-steelers.webp",
+      "title": "pittsburgh steelers",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-017",
+      "source": "pumpkin-scarecrow.webp",
+      "title": "pumpkin scarecrow",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-018",
+      "source": "supernatural-uv.webp",
+      "title": "supernatural uv",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-019",
+      "source": "vault395_free_website/images/mirror-01.jpg",
+      "title": "mirror 01",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-020",
+      "source": "vault395_free_website/images/mirror-02.jpg",
+      "title": "mirror 02",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-021",
+      "source": "vault395_free_website/images/mirror-03.jpg",
+      "title": "mirror 03",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-022",
+      "source": "vault395_free_website/images/mirror-04.jpg",
+      "title": "mirror 04",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-023",
+      "source": "vault395_free_website/images/mirror-05.jpg",
+      "title": "mirror 05",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-024",
+      "source": "vault395_free_website/images/mirror-06.jpg",
+      "title": "mirror 06",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-025",
+      "source": "vault395_free_website/images/mirror-07.jpg",
+      "title": "mirror 07",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-026",
+      "source": "vault395_free_website/images/mirror-08.jpg",
+      "title": "mirror 08",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-027",
+      "source": "vault395_free_website/images/mirror-09.jpg",
+      "title": "mirror 09",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-028",
+      "source": "vault395_free_website/images/mirror-10.jpg",
+      "title": "mirror 10",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": "Existing mirror photo; needs naming and approval"
+    },
+    {
+      "id": "IMPORT-029",
+      "source": "vault395_its_a_boy_cropped.jpg",
+      "title": "vault395 its a boy cropped",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    },
+    {
+      "id": "IMPORT-030",
+      "source": "vault395_its_a_girl_cropped.jpg",
+      "title": "vault395 its a girl cropped",
+      "status": "pending-review",
+      "public_catalog": false,
+      "notes": ""
+    }
+  ]
+}
