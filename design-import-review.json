@@ -55,17 +55,21 @@
       "id": "IMPORT-007",
       "source": "animatronic-horror.webp",
       "title": "animatronic horror",
-      "status": "pending-review",
-      "public_catalog": false,
-      "notes": ""
+      "status": "approved",
+      "public_catalog": true,
+      "notes": "User approved in chat; existing catalog listing retained.",
+      "catalog_id": "V395-003",
+      "approved_on": "2026-10-25"
     },
     {
       "id": "IMPORT-008",
       "source": "chupacabra-humor.webp",
       "title": "chupacabra humor",
-      "status": "pending-review",
-      "public_catalog": false,
-      "notes": ""
+      "status": "approved",
+      "public_catalog": true,
+      "notes": "User approved in chat; existing catalog listing retained.",
+      "catalog_id": "V395-004",
+      "approved_on": "2026-10-25"
     },
     {
       "id": "IMPORT-009",
@@ -111,9 +115,11 @@
       "id": "IMPORT-014",
       "source": "live-laugh-love.webp",
       "title": "live laugh love",
-      "status": "pending-review",
-      "public_catalog": false,
-      "notes": ""
+      "status": "approved",
+      "public_catalog": true,
+      "notes": "User approved in chat; existing catalog listing retained.",
+      "catalog_id": "V395-001",
+      "approved_on": "2026-10-25"
     },
     {
       "id": "IMPORT-015",
@@ -135,9 +141,11 @@
       "id": "IMPORT-017",
       "source": "pumpkin-scarecrow.webp",
       "title": "pumpkin scarecrow",
-      "status": "pending-review",
-      "public_catalog": false,
-      "notes": ""
+      "status": "approved",
+      "public_catalog": true,
+      "notes": "User approved in chat; existing catalog listing retained.",
+      "catalog_id": "V395-002",
+      "approved_on": "2026-10-25"
     },
     {
       "id": "IMPORT-018",
